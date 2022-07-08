@@ -19,7 +19,8 @@ var gulp         = require('gulp'),
 gulp.task('html', function() {
   return gulp.src(['src/templates/pages/**/*.pug'])
     .pipe(pug({
-      basedir: 'src/templates'
+      basedir: 'src/templates',
+      pretty: true
     }))
     .pipe(gulp.dest('dest'))
     .pipe(sync.stream());
