@@ -44,6 +44,12 @@
 @global-xsmall-margin:                          5px;
 @global-xsmall-gutter:                          10px;
 
+//
+// Colors
+//
+@global-muted-dark-bg:                            rgba(255,255,255,.7);
+@global-muted-light-bg:                            rgba(0,0,0,.7);
+
 
 // Base
 // ========================================================================
@@ -241,7 +247,7 @@
 @offcanvas-bar-background:                      @global-background;
 @offcanvas-card-header-height:                  60px;
 
-.uk-offcanvas { z-index: 1006; }
+.uk-offcanvas.uk-offcanvas-overlay { z-index: 1006; }
 
 .uk-offcanvas-bar .uk-card-header {
   min-height: @offcanvas-card-header-height;
@@ -355,7 +361,7 @@
 
 // Toolbar
 
-@header-toolbar-background:                     @global-secondary-background;
+@header-toolbar-background:                     @global-primary-background;
 @header-toolbar-nav-item-height:                40px;
 
 
@@ -452,7 +458,7 @@
 // Nav
 
 @custom-nav-item-padding-vertical:              10px;
-@custom-nav-item-padding-horizontal:            0;
+@custom-nav-item-padding-horizontal:            15px;
 @custom-nav-item-active-border-width:           2px;
 @custom-nav-item-active-border-color:           @global-primary-background;
 
@@ -486,7 +492,7 @@
 }
 
 .tm-toolbar-container .uk-navbar-item {
-  color: @navbar-nav-item-color;
+  color: @global-muted-dark-bg;
 }
 
 .tm-toolbar-container .uk-navbar-nav > li > a {
