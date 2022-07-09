@@ -9,7 +9,7 @@ block vars
 block default
 
   //- Slider
-  section.uk-position-relative.uk-visible-toggle.uk-light(uk-slideshow="min-height: 300; max-height: 600;")
+  section.uk-position-relative.uk-visible-toggle.uk-light(uk-slideshow="min-height: 200; max-height: 400;")
     ul.uk-slideshow-items
       each item in promo
         li(style="background-color: " + item.background)
@@ -18,7 +18,7 @@ block default
               img(src= item.image
                   alt= item.title
                   width="1200"
-                  height="600"
+                  height="400"
                   uk-cover)
 
     a.uk-position-center-left.uk-position-small.uk-hidden-hover(
