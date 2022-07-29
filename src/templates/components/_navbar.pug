@@ -22,15 +22,12 @@ div.uk-navbar-container.tm-navbar-container(uk-sticky="cls-active: tm-navbar-con
                   +icon('chevron-down', '.75')(class="uk-margin-xsmall-left")
               if item.items
                 div(class="uk-navbar-dropdown uk-padding-remove-vertical"
-                    uk-drop="pos: bottom-justify;" +
-                            "delay-show: 125;" +
+                    uk-drop="delay-show: 125;" +
                             "delay-hide: 50;" +
                             "duration: 75;" +
                             "boundary: .tm-navbar-container;" +
-                            "offset: 10px;" +
-                            "boundary-align: true;" +
-                            "pos: bottom-justify;" +
-                            "flip: x")
+                            "stretch: x;" +
+                            "offset: 15px;")
 
                   if item.name === "Catalog"
                     div.uk-container

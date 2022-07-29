@@ -77,11 +77,11 @@ function increment(incrementor, target) {
 
 // Update sticky tabs
 
-(function () {
-    UIkit.util.on('.js-product-switcher', 'show', function () {
-        UIkit.update();
-    });
-})();
+// (function () {
+//     UIkit.util.on('.js-product-switcher', 'show', function () {
+//         UIkit.update();
+//     });
+// })();
 
 // Add to cart
 
@@ -142,7 +142,7 @@ function increment(incrementor, target) {
     setTimeout(function () {
         UKSliderActiveThumbItem = document.querySelector('#thumbs-slider .uk-active');
         galleryThumbsActivationUpdate();
-    }, 0);
+    }, 1);
 
     UIkit.util.on('#thumbs-slider', 'beforeitemshow', function (e) {
         UKSliderActiveThumbItem = document.querySelector('#thumbs-slider .uk-active');
