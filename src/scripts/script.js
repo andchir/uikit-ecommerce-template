@@ -142,13 +142,14 @@ function increment(incrementor, target) {
     setTimeout(function () {
         UKSliderActiveThumbItem = document.querySelector('#thumbs-slider .uk-active');
         galleryThumbsActivationUpdate();
-    }, 0);
+    }, 10);
 
     UIkit.util.on('#thumbs-slider', 'beforeitemshow', function (e) {
         UKSliderActiveThumbItem = document.querySelector('#thumbs-slider .uk-active');
     });
+
     UIkit.util.on('#thumbs-slider', 'itemshown', function (e) {
-      galleryThumbsActivationUpdate();
+        setTimeout(galleryThumbsActivationUpdate, 10);
     });
 })();
 
