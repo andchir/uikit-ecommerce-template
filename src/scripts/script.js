@@ -77,11 +77,11 @@ function increment(incrementor, target) {
 
 // Update sticky tabs
 
-(function () {
-    UIkit.util.on('.js-product-switcher', 'show', function () {
-        UIkit.update();
-    });
-})();
+// (function () {
+//     UIkit.util.on('.js-product-switcher', 'show', function () {
+//         UIkit.update();
+//     });
+// })();
 
 // Add to cart
 
