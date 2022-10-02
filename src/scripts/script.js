@@ -142,7 +142,7 @@ function increment(incrementor, target) {
     setTimeout(function () {
         UKSliderActiveThumbItem = document.querySelector('#thumbs-slider .uk-active');
         galleryThumbsActivationUpdate();
-    }, 10);
+    }, 100);
 
     UIkit.util.on('#thumbs-slider', 'beforeitemshow', function (e) {
         UKSliderActiveThumbItem = document.querySelector('#thumbs-slider .uk-active');
